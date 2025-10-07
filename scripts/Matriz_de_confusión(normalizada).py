@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 # rutas (ajusta si cambiaste)
-MODEL_PATH = 'models/nb_model.pkl'
-VECT_PATH = 'models/vectorizer.pkl'
-TEST_PATH = 'data/test.jsonl'
+MODEL_PATH = os.path.join('..', 'models', 'nb_model.pkl')
+VECT_PATH = os.path.join('..', 'models', 'vectorizer.pkl')
+TEST_PATH = os.path.join('..', 'data', 'test.jsonl')
 
 # cargar
 clf = pickle.load(open(MODEL_PATH, 'rb'))

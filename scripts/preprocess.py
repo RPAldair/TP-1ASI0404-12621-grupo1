@@ -16,7 +16,7 @@ from unidecode import unidecode
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATASET_CSV = ROOT / 'pictogramas_dataset' / 'dataset_pictogramas.csv'
+DATASET_CSV = ROOT / 'data' / 'dataset_pictogramas.csv'
 OUT_DIR = ROOT / 'data'
 OUT_DIR.mkdir(exist_ok=True)
 
